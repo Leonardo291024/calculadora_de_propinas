@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">SPLI TTER</h1>
+
+    <main>
+            <div>
+                <section class="container_bill">
+                    <label for="">Bill</label>
+                    <input type="number" placeholder="0" id="cuenta">
+                    <p class="errorBill"></p>
+                </section>
+        
+                <section class="select_tip_container">
+                    <h2>Select Tip %</h2>
+                    <div class="container_tips">
+                        <div>
+                            <input type="radio" id="5" name="option" value="option5">
+                            <label for="5">5%</label>
+                        </div>
+        
+                        <div>
+                            <input type="radio" id="10" name="option" value="option10">
+                            <label for="10">10%</label>
+                        </div>
+        
+                        <div>
+                            <input type="radio" id="15" name="option" value="option15">
+                            <label for="15">15%</label>
+                        </div>
+        
+                        <div>
+                            <input type="radio" id="25" name="option" value="option25">
+                            <label for="25">25%</label>
+                        </div>
+        
+                        <div>
+                            <input type="radio" id="50" name="option" value="option50">
+                            <label for="50">50%</label>
+                        </div>
+        
+                        <div>
+                            <input type="number" placeholder="Custom" class="input_custom" id="custom">
+                        </div>
+                    </div>
+                </section>
+        
+                <section class="number_person_container">
+                    <label for="persons">Number of People</label>
+                    <input type="number" name="" id="persons" placeholder="👤">
+                    <p class="errorPerson"></p>
+                </section>
+        
+            </div>
+            <section class="container_total">
+                <div class="div_total">
+                    <div>
+                        <p>Tip Amount</p>
+                        <p>/  person</p>
+                    </div>
+                    <h1 id="propina">$0.00</h1>
+                </div>
+    
+                <div class="div_total">
+                    <div>
+                        <p>Totalt</p>
+                        <p>/  person</p>
+                    </div>
+                    <h1 id="totalCuenta">$0.00</h1>
+                </div>
+
+                <div class="butons">
+                    <button class="cuenta" id="btnCuenta">Cuenta</button>
+                    <button class="cuenta reset" id="btnReset">Reset</button>
+                </div>
+            </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
